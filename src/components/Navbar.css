@@ -1,0 +1,40 @@
+.navbar {
+    display: flex;
+    gap: 20px;
+    background: white;
+    padding: 10px;
+}
+
+.navbar a {
+    color: gray;
+    text-decoration: none;
+}
+
+.container {
+    display: flex;
+    gap: 20px;
+}
+
+.left {
+    width: 50px;
+}
+
+.right {
+    width: 50px;
+}
+
+.todo {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+button {
+    margin: 5px;
+}
+
+input, textarea {
+    display: block;
+    margin: 10px 0;
+    padding: 5px;
+}
