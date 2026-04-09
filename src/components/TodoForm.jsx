@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-function WorkoutForm({ addTodo }) {
+function TodoForm({ addTodo }) {
     const [text, setText] = useState("");
 
 
@@ -25,4 +25,4 @@ function WorkoutForm({ addTodo }) {
     );
 }
 
-export default WorkoutForm;
+export default TodoForm;

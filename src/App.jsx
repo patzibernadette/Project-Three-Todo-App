@@ -1,8 +1,9 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { useState } from 'react'
 import './App.css'
-import ContactInfo from './pages/ContactInfo';
-import Workout from './pages/Workout';
+import Contact from './pages/Contact';
+import Todos from "./pages/Todos";
+import Navbar from './components/Navbar';
 
 function App() {
   return(
@@ -10,9 +11,10 @@ function App() {
       <Navbar />
     
       <Routes>
-        <Route path="/todos" element={<Workout />} />
+        <Route path="/" element={<Todos />} />
+        <Route path="/todos" element={<Todos />} />
 
-        <Route path="/contact" element={<ContactInfo />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
     
     </BrowserRouter>

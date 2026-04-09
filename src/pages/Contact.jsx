@@ -1,35 +1,35 @@
 import { useState } from "react";
-function ContactInfo() {
-  // Store form data
+function Contact() {
+  
   const [form, setForm] = useState({
-    firstName: "",
-    lastName: "",
+    Name: "",
+    Number: "",
     email: "",
     comments: ""
   });
 
-  // Handle input changes
+  
   function handleChange(e) {
     setForm({
-      ...form, // copy old data
-      [e.target.name]: e.target.value // update specific field
+      ...form, 
+      [e.target.name]: e.target.value 
     });
   }
 
   return (
     <div>
-      <h2>Contact Form</h2>
+      <h2>Contact Info</h2>
 
-      {/* Controlled inputs */}
+      
       <input
-        name="firstName"
-        placeholder="First Name"
+        name="Name"
+        placeholder="Name"
         onChange={handleChange}
       />
 
       <input
-        name="lastName"
-        placeholder="Last Name"
+        name="number"
+        placeholder="Number"
         onChange={handleChange}
       />
 
@@ -44,8 +44,12 @@ function ContactInfo() {
         placeholder="Comments"
         onChange={handleChange}
       />
+
+      <button type="submit">Send</button>
     </div>
+
+  
   );
 }
 
-export default ContactInfo;
+export default Contact;
