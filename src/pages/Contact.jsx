@@ -21,8 +21,14 @@ function Contact() {
 
       
       <input
-        name="Name"
-        placeholder="Name"
+        name="firstName"
+        placeholder="First Name"
+        onChange={handleChange} 
+      />
+
+      <input
+        name="lastName"
+        placeholder="Last Name"
         onChange={handleChange} 
       />
 
