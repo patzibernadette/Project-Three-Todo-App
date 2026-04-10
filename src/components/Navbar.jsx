@@ -9,11 +9,11 @@ function Navbar() {
             </Link>
 
             <div>
-                <Link className="btn btn-dark mx-2" to="/todos">
+                <Link className="btn btn-light mx-2" to="/todos">
                     Workout Todo
                 </Link>
 
-                <Link className="btn btn-dark" to="/contact">
+                <Link className="btn btn-light" to="/contact">
                     Contact Info
                 </Link>
             </div>

@@ -1,11 +1,15 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import './App.css'
 import Contact from './pages/Contact';
 import Todos from "./pages/Todos";
 import Navbar from './components/Navbar';
 
 function App() {
+  const [color, setColor ] = useState ("pink")
+  useEffect(()=>{
+    document.body.style.backgroundColor = color
+  }, [color])
   return(
     <BrowserRouter>
       <Navbar />
@@ -19,6 +23,7 @@ function App() {
     
     </BrowserRouter>
   );
+  
 }
 
 

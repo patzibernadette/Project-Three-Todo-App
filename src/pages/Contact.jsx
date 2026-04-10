@@ -15,16 +15,15 @@ function Contact() {
       [e.target.name]: e.target.value 
     });
   }
-
   return (
-    <div>
+    <div className="contact-container">
       <h2>Contact Info</h2>
 
       
       <input
         name="Name"
         placeholder="Name"
-        onChange={handleChange}
+        onChange={handleChange} 
       />
 
       <input
@@ -46,10 +45,9 @@ function Contact() {
       />
 
       <button type="submit">Send</button>
-    </div>
-
-  
+    </div>  
   );
 }
+
 
 export default Contact;
