@@ -64,7 +64,7 @@ function Todos() {
 
         
         {filteredTodos.map(todo => (
-          <TodoItem
+          <Todoitem
             key={todo.id} 
             todo={todo}
             toggleTodo={toggleTodo}
