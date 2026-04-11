@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 function Navbar() {
     return (
-        <nav className="navbar navbar-light bg-light px-3">
+        <nav className="navbar navbar-light bg-light px-5">
 
             <Link className="navbar-brand text-gray" to="/todos">
                 HER Workout Todo App
