@@ -46,12 +46,12 @@ input, textarea {
   align-items: center;
   justify-content: center;
   height: 50vh;
-  gap: 15px; /* Adds space between fields */
+  gap: 15px; 
 }
 
 .contact-container input, 
 .contact-container textarea {
   width: 100%;
-  max-width: 400px; /* Prevents inputs from being too wide */
+  max-width: 400px; 
 }
 

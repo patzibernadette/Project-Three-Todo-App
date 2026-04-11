@@ -5,7 +5,7 @@ function TodoForm({ addTodo }) {
 
 
     function handleSubmit(e) {
-        e.preventDefault(); 
+        e.preventDefault();
 
         addTodo(text);
         setText("");
@@ -13,14 +13,24 @@ function TodoForm({ addTodo }) {
 
     return (
         <form onSubmit={handleSubmit}>
-            
-                <input
-                    value={text}
-                    onChange={e => setText(e.target.value)}
-                    placeholder="Enter Day/Workout Todo"
-                />
-           
-            <button type="submit">Add</button>
+
+
+            <div className="container d-flex gap-4">
+                <div className="w-50">
+                    <h2>Input Text</h2>
+
+                    <input
+                        value={text}
+                        onChange={e => setText(e.target.value)}
+                        placeholder="Enter Day/Workout Todo"
+                    />
+                    <button type="submit">Add</button>
+
+
+                </div>
+
+            </div>
+
         </form>
     );
 }
