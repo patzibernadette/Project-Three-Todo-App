@@ -17,7 +17,7 @@ function TodoForm({ addTodo }) {
                 <input
                     value={text}
                     onChange={e => setText(e.target.value)}
-                    placeholder="Enter Workout Todo"
+                    placeholder="Enter Day/Workout Todo"
                 />
            
             <button type="submit">Add</button>
